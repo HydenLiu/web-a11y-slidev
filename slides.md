@@ -33,7 +33,7 @@ growY: 90
 style: 'padding-left: 8rem;'
 ---
 
-# Web Accessibility
+# Web Accessibility (web A11y)
 
 > Web Accessibility 是指任何人(这里的任何人，无论是健全人还是残疾人，无论是年轻人还是老年人等等)在任何情况下都能平等的、方便的、无障碍的获取信息和利用信息。
 
