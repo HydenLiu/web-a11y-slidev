@@ -75,7 +75,7 @@ growSize: 0.75
 
 ``` html
 <!-- Example -->
-<img src="./img.png" ale="">
+<img src="./img.png" alt="">
 ```
 
 ---
