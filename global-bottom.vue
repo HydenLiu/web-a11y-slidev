@@ -72,8 +72,9 @@ watchEffect(() => {
 <template>
   <span
     absolute pointer-events-none rounded-full z-100 mix-blend-plus-lighter
-    bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500
+    bg-gradient-to-r 
     op75 dark:op50
+    class="from-#2CB67D to-#2CB67D"
     :class="transitionClass"
     :style="{
       top: `${top}%`,

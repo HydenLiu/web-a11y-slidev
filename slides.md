@@ -6,14 +6,17 @@ colorSchema: dark
 transition: fade-out
 growSize: 1.5
 title: 了解一下 Web Accessibility
+growX: 110
+growY: -10
 ---
 
-<img class="w-60 absolute top-10 left-10" src="/type-challenges-logo.svg" />
+
+<img class="w-30 absolute top-10 left-10 text-[#00EBC7]" src="/logo.svg" />
 
 # 了解一下 Web Accessibility
 
 <div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
+  <span @click="$slidev.nav.next" class="px-2 py-1 rounded text-[#00EBC7] cursor-pointer" hover="bg-white bg-opacity-10">
     立即前往 <carbon:arrow-right class="inline animate-fade-out-right animate-count-infinite animate-duration-1.5s"/>
   </span>
 </div>
@@ -33,14 +36,14 @@ growY: 90
 style: 'padding-left: 8rem;'
 ---
 
-# Web Accessibility (web A11y)
+# Web Accessibility ([web A11y](http://mds.is/a11y/))
 
 > Web Accessibility 是指任何人(这里的任何人，无论是健全人还是残疾人，无论是年轻人还是老年人等等)在任何情况下都能平等的、方便的、无障碍的获取信息和利用信息。
 
-- 听觉障碍:使用视频时，确保它有完整的字幕。使用音频时，别忘了文本描述
-- 视觉障碍:足够的对比度。支持读屏软件
-- 运动障碍:同时对鼠标和键盘有很好的支持
-- 认知障碍:避免快速的移动，晃动等效果。
+- 听觉障碍: 使用视频时，确保它有完整的字幕。使用音频时，别忘了文本描述
+- 视觉障碍: 足够的对比度。支持读屏软件
+- 运动障碍: 同时对鼠标和键盘有很好的支持
+- 认知障碍: 避免快速的移动，晃动等效果。
 
 ---
 layout: center
@@ -106,6 +109,11 @@ class: text-center
 - AAA级 (最高)
 
 --- 
+layout: center
+growX: 110
+growY: 110
+class: text-left
+---
 
 ### WCAG Guidelines
 
@@ -141,11 +149,6 @@ growY: 0
         Library
       </a>
     </li>
-    <li role="none">
-      <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">
-        Data
-      </a>
-    </li>
   </ol>
 </nav>
 ```
@@ -156,7 +159,7 @@ growY: 0
 #### Screen Reader
 
 * router navigation landmark
-* router submenu 1 of 3 
+* router submenu 1 of 2
 
 </div>
 </div>
@@ -164,7 +167,7 @@ growY: 0
 ---
 layout: center
 growX: 50
-growY: -50
+growY: -60
 growSize: 1.5
 ---
 
@@ -194,7 +197,7 @@ style: 'padding-left: 8rem;'
 <div  grid="~ cols-2 gap-4" mt-6>
 <div v-click>
 
-#### [Landmark Roles](https://www.w3.org/TR/wai-aria-1.2/#landmark_roles)
+##### [Landmark Roles](https://www.w3.org/TR/wai-aria-1.2/#landmark_roles)
 - [application](https://www.w3.org/TR/wai-aria-1.2/#application)
 - [banner](https://www.w3.org/TR/wai-aria-1.2/#banner)
 - [complementary](https://www.w3.org/TR/wai-aria-1.2/#complementary)
@@ -208,7 +211,7 @@ style: 'padding-left: 8rem;'
 </div>
 <div v-click>
 
-#### Screen Reader
+##### Screen Reader
 
 <img src="/public/landmark.svg" />
 
@@ -216,7 +219,8 @@ style: 'padding-left: 8rem;'
 </div>
 
 <div v-click mt-10px>
-* https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html
+  
+  * [https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html)
 </div>
 
 ---
@@ -257,6 +261,9 @@ growSize: 1.5
 ---
 
 #### Headings
+
+<br>
+
 > Heading可以传递页面的层级结构，有利于用户了解页面结构
 
 - 按等级嵌套标题。最重要的标题排名1 (`<h1>`) ，最不重要的标题排名6(`<h6>`)。
@@ -270,6 +277,9 @@ growY: -10
 ---
 
 #### Page Title
+
+<br>
+
 > 提供唯一、简洁的页面标题有助于残疾用户快速理解网页的内容和用途
 
 - 提供准确描述页面内容和用途的简明页面标题

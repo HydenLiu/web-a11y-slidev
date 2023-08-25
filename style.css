@@ -10,7 +10,8 @@ h6 {
 }
 
 .dark #slide-content {
-  background-color: black !important;
+  background-color: #232946 !important;
+  color: #b8c1ec !important;
 }
 
 /* Transitions */
@@ -54,16 +55,8 @@ h1, h2, h3, h4, h5, h6, p{
   margin: 0;
 }
 
-h2{
-  color: #dde3ff;
-}
-
-h3{
-  color: #6d87b3;
-}
-
-h4{
-  color: #c6d5ff;
+h2, h3, h4, h5, h6{
+  color: #eebbc3;
 }
 
 /* 好看的渐变边框，加点亮色阴影 */
